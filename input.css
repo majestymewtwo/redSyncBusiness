@@ -1,6 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
 .hamburger {
     cursor: pointer;
     width: 24px;
@@ -43,4 +44,58 @@
 
 .open .hamburger-bottom {
     transform: rotate(-45deg) translateY(6px) translate(-6px);
+}
+.review-container {
+    margin-top: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: aliceblue;
+    width: 50%;
+    padding: 3%;
+    border-radius: 10px;
+    box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.242);
+
+}
+
+.person-img {
+    height: 150px;
+    margin-top: -35px;
+    margin: 1% auto;
+}
+
+.person-name {
+    margin: 1% auto;
+}
+
+.review-para {
+    color: #585b5e;
+    width: 70%;
+    margin: 0 auto 5% auto;
+    font-size: 1rem;
+}
+
+.slide-control {
+    display: flex;
+    justify-content: center;
+}
+
+.prev-btn,
+.next-btn {
+    cursor: pointer;
+    margin: 0 5%;
+}
+
+i:hover {
+    color: #8758FF;
+}
+
+
+@media (max-width: 768px) {
+    .review-container {
+        width: 90%;
+    }
+
+    .person-img {
+        height: 120px;
+    }
 }
